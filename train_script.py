@@ -127,7 +127,7 @@ test_predictions = best_pipeline.predict(data_test_x)
 
 test_data["lib"] = np.array([labels[i] for i in test_predictions])
 
-test_data.to_csv("./data/leonid_petrov.csv")
+test_data.to_csv("./data/submission.csv")
 
 # Были попытки взять предобученную Roberta-base с huggingface в качестве фича-экстрактора, но они,
 # видимо, из-за недостаточно хорошей архитектуры моей модели, дали худшее качество
